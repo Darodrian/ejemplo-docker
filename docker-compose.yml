@@ -1,0 +1,14 @@
+version: '3'
+
+services:
+  server:
+    container_name: server
+    # image: alonsi:0.0.2
+    build: ./server
+    ports:
+      - 2390:2390
+  client:
+    container_name: client
+    image: alonse:0.0.1
+    ports:
+      - 3000:3000
